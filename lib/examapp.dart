@@ -34,7 +34,7 @@ class ExamApp extends StatelessWidget {
                   child: Text("Roll No.:"),
                 ),
             Padding(
-              padding: const EdgeInsets.only(right: 240,top: 10),
+              padding: const EdgeInsets.only(right: 240,top: 12),
               child: Text("Name:"),
             ),
             Row(
