@@ -30,25 +30,26 @@ class ExamApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(right: 250,top: 40),
-                  child: Text("Roll No.:"),
+                  padding: const EdgeInsets.only(right: 280,top: 40),
+                  child: Text("Roll No.:",style: TextStyle(fontWeight: FontWeight.bold),),
                 ),
             Padding(
-              padding: const EdgeInsets.only(right: 240,top: 12),
-              child: Text("Name:"),
+              padding: const EdgeInsets.only(right: 270,top: 12),
+              child: Text("Name:",style: TextStyle(fontWeight: FontWeight.bold),),
             ),
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 50),
-                  child: Text("Email:"),
+                  padding: const EdgeInsets.only(left: 35),
+                  child: Text("Email:",style: TextStyle(fontWeight: FontWeight.bold),),
                 ),
-                Container(
+                SizedBox(
                   width: 200,
                   height: 35,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextField(
+                      cursorHeight: 10 ,
                     
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -59,7 +60,11 @@ class ExamApp extends StatelessWidget {
                   ),
                 )
               ],
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 278,top: 10),
+              child: Text("Mobile:",style: TextStyle(fontWeight: FontWeight.bold),),
+            ),	
               ],
             )
             
