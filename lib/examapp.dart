@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class ExamApp extends StatelessWidget {
@@ -66,6 +68,36 @@ class ExamApp extends StatelessWidget {
               child: Text("Mobile:",style: TextStyle(fontWeight: FontWeight.bold),),
             ),	
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text("Nov/Dec-2026",style: TextStyle(fontWeight: FontWeight.bold),),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 200,top: 10),
+              child: Text("Regular Subjects",style: TextStyle(fontWeight: FontWeight.bold),),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: DataTable(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Color.fromARGB(255, 22, 22, 22))
+                ),
+                columnSpacing: 1,
+                dataRowHeight: 20,
+                columns: [
+                 DataColumn(label: Text("Semester", style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text("Course Code", style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text("Course Name", style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text("Amount Rs.", style: TextStyle(fontWeight: FontWeight.bold))),
+              ], rows: [
+                 DataRow(cells: [
+                  DataCell(Text("I")),
+                  DataCell(Text("CS101")),
+                  DataCell(Text("Computer Science")),
+                  DataCell(Text("5000")),
+                ]),
+              ]),
             )
             
           ],
